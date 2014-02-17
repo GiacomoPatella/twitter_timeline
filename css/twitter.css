@@ -1,0 +1,404 @@
+body {
+  background-image: url(../images/bground_tile.png);
+  background-position: left 40px;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-color: #435757;
+}
+
+a.sprite {
+  text-decoration: none;
+  background-image: url(https://abs.twimg.com/a/1390526377/img/t1/twitter_web_sprite_icons.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  padding: 0;
+}
+
+a.home-sprite {
+  background-position: 0px -42px;
+}
+
+a.connect-sprite {
+  background-position: -75px -43px;
+}
+
+a.discover-sprite {
+  background-position: -31px -42px;
+}
+
+a.me-sprite {
+  background-position: -115px -42px;
+}
+
+a.twitter-sprite {
+  background-position: -35px 10px;
+  margin-left: 70px;
+}
+
+a.compose-sprite {
+  background-position: -195px -42px;
+}
+
+
+a.email-sprite {
+  background-position: -81px -869px;
+}
+
+a.settings-sprite {
+  background-position: -155px -43px;
+  margin: 0px;
+}
+
+a.drop-arrow-sprite {
+  background-position: -156px -43px;
+}
+
+a.thin-divider {
+  background-position: -238px -50px;
+  width: 5px;
+}
+
+
+.navbar {
+  height: 40px;
+  min-height: 40px;
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  background-image: -moz-linear-gradient(top, #474747, #191919);
+  background-image: -ms-linear-gradient(top, #474747, #191919);
+  background-image: -webkit-linear-gradient(top, #474747, #191919);
+  background-image: linear-gradient(top, #474747, #191919);
+}
+
+.navbar-nav > li {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.navbar-right > li {
+  height: 40px;
+  margin-right: 1px;
+}
+
+.navbar-nav > li > a {
+  padding: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.navbar-nav > li > a.sprite {
+  margin-bottom: -4px;
+}
+
+
+.form-control {
+  border-radius: 15px;
+  height: 26px;
+  width: 202px;
+  margin-right: 3px;
+  background-color: #CCCCCC;
+}
+
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: 0px;
+}
+
+.container {
+  width: 865px;
+}
+
+.hash {
+  font-size: 20px;
+}
+
+.dropdown-menu {
+  font-size: 12px;
+}
+
+.page-wrapper {
+  /*position: relative;*/
+  width: 866px;
+  padding: 54px 14px 0px 14px;
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, .3);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dashboard {
+  float: left;
+  width: 302px;
+  height: 690px;
+  margin-left: 14px;
+  margin-right: 14px;
+  padding: 0px;
+}
+
+.profile-container {
+  width: 300px;
+  height: 158px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-summary-box {
+  background-color: #f9f9f9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid #e8e8e8;
+  height: 56px;
+  width: 300px;
+  padding: 12px;
+}
+
+.prof-mini-ava {
+  width: 32px;
+  height:32px;
+  float: left;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.profile-GP {
+  font-weight: bold;
+}
+
+.profile-edit {
+  font-size: 11px;
+  color: #8C8C8C;
+}
+
+.stats-list {
+  list-style-type: none;
+  padding: 0px;
+  font-size: 12px;
+}
+
+.stats-list li {
+  display: inline-block;
+  width: 98px;
+  height: 48px;
+  padding: 10px;
+  border-right: 1px solid #e8e8e8;
+}
+
+.stats-list li:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #20858C;
+}
+
+.stats-list small {
+  color: #8C8C8C;
+}
+
+.seven {
+  background-color: blue;
+  width: 39px;
+  height: 32px;
+  padding: 7px 12px;
+}
+
+.profile-stats {
+  display: block;
+  background-color: #f9f9f9;
+  height: 48px;
+  width: 300px;
+}
+
+
+.profile-tweet-box-compose {
+  background-color: #ebebeb;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 52px;
+  width: 300px;
+  padding: 12px;
+}
+
+.profile-compose {
+  width: 280px;
+}
+
+.wtf-container {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  width: 300px;
+  border: 1px;
+  height: 182px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 12px;
+}
+
+.wtf-content{
+  margin-bottom: 10px;
+}
+
+.wtf-content h5 {
+  margin-top: 0px;
+}
+
+.wtf-avatar-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.wtf-footer {
+  padding-top: 10px;
+}
+
+.trends {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+  width: 300px;
+  height: 226px;
+}
+
+  .trends ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.7;
+    color: #20858C;
+  }
+
+  .trends li {
+    font-size: 12px;
+  }
+
+#trends-normal {
+  font-size: 14px;
+  color: black;
+}
+
+.credits {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+  width: 300px;
+  height: 78px;
+  font-size: 12px;
+  color: #8C8C8C;
+  line-height: 1.7;
+}
+
+#links {
+  font-size: 14px;
+  color: #20858C;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: none;
+}
+
+#links:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#handle {
+  font-size: 12px;
+  color: #8C8C8C;
+}
+
+.expand {
+  float: left;
+  font-size: 12px;
+  color: #8C8C8C;
+}
+
+.reply {
+  float: right;
+  font-size: 12px;
+  color: #CCCCCC;
+}
+
+.name-handles {
+  float: left;
+}
+
+.tweet-time-since {
+  float: right;
+  font-size: 12px;
+  color: #CCCCCC;
+}
+
+.glyphicon.glyphicon-share-alt {
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.content-text {
+  padding-top: 20px;
+}
+
+#timeline {
+  float: right;
+  width: 522px;
+  height: 1500px;
+  margin-right: 14px;
+  padding: 0px; /*overrides col-md-8 padding*/
+}
+
+.tweets-header {
+  background-color: white;
+  height: 45px;
+  padding: 12px;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #e8e8e8;
+  font: bold 18px Helvetica, sans-serif;
+}
+
+
+.tweet-container {
+  background-color: white;
+  padding: 9px 12px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.tweet-container .avatar-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.tweet-container .avatar-box {
+  float: left;
+}
+
+.tweet-container .content-box {
+  float: right;
+  width: 440px;
+  height: 100%;
+}
+
+.tweet-container .content-text {
+  text-align: left;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.content-expand-reply {
+  padding-top: 3px;
+}

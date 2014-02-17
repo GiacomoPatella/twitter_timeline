@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/twitter.css">
+  </head>
+
+
+    <body>
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class='container'>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="#">Brand</a> -->
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+              <!-- <li> <a href="#"> <span class="glyphicon glyphicon-home"></span>  Home</a> </li> -->
+              
+              <li><a class="sprite home-sprite"></a> <a href="#">Home</a></li>
+
+              <!-- <li> <a href="#"><img id="email-icon" src ="images/email_icon3.png">  Connect</a></li> -->
+              <li><a class="sprite connect-sprite"></a> <a href="#">Connect</a></li>
+
+              <!-- <li> <a href="#"># Discover</a></li> -->
+              <li><a class="sprite discover-sprite"></a> <a href="#">Discover</a></li>
+
+              <!-- <li> <a href="#"><img id="me-icon" src="images/me_icon.png"> Me</a></li> -->
+              <li><a class="sprite me-sprite"></a> <a href="#">Me</a></li>
+
+              <!-- <li> <a href="#"><img id="twitter-icon" src="images/twitter_alt.png"></a></li> -->
+              <li><a class="sprite twitter-sprite"></a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <!-- SEARCH -->
+              <li>
+              <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              </li>
+              <li><a class="sprite thin-divider"></a></li>
+                <!-- EMAIL -->
+              <!-- <li> <a href="#"> <span class="glyphicon glyphicon-envelope"</span></a></li> -->
+              <li><a class="sprite email-sprite"></a></li>
+              <li><a class="sprite thin-divider"></a></li>
+                <!-- SETTINGS DROPDOWN -->
+              <li class="dropdown">
+                <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"> </span><b class="caret"></b></a> -->
+                <a class="sprite settings-sprite" data-toggle="dropdown"></a>
+<!--                <a class="sprite drop-arrow-sprite"></a>-->
+                
+                <ul class="dropdown-menu">
+                  <li><a href="#">Giacomo Patella</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Lists</a></li>
+
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Keyboard shortcuts</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Sign out</a></li>
+                </ul>
+              </li>
+              <li><a class="sprite thin-divider"></a></li>
+                <!-- COMPOSE -->
+              <li>
+                  <a class="sprite compose-sprite"> </a>
+                <!-- <span class="glyphicon glyphicon-edit"></span></li> -->
+
+            </ul> <!-- nav navbar-nav navbar-right -->
+          </div>
+       </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="page-wrapper">
+            <!-- DASHBOARD wrapper-->
+          <div class="row">
+            <div class="col-md-4" id="dashboard">
+              <!-- mini-profile-container -->
+              <div class="profile-container">
+                <div class="profile-summary-box">
+                  <div class="profile-mini-avatar"><img class="prof-mini-ava" src="./images/avatars/me.jpeg"></div>
+                  <div class="profile-GP">Giacomo Patella</div>
+                  <div class="profile-edit">View my profile page</div>
+                </div>
+                <div class="profile-stats">
+                  <ul class="stats-list">
+                    <li><div><strong>7</strong><br><small>TWEETS</small></div></li>
+                    <li><div><strong>58</strong><br><small>FOLLOWING</small></div></li>
+                    <li><div><strong>18</strong><br><small>FOLLOWERS</small></div></li>
+                  </ul>
+                </div>
+                <div class="profile-tweet-box">
+                  <div class="profile-tweet-box-compose">
+                    <input type="text" class="profile-compose" placeholder="Compose new tweet...">
+                  </div>
+                </div>
+
+              </div> <!-- end of profile-container -->
+              <div class="wtf-container">
+                <div class="wtf-content">
+                  <div><p>Who to follow &#183 <span id="links"><small>Refresh</small></span> &#183 <span id="links"><small>View all</small></span><p></div>
+                </div>
+                <div class="wtf-recommendations">
+                  <div><img class="wtf-avatar-img" src="./images/avatars/andy.jpeg"></div>
+                  <div><img class="wtf-avatar-img" src="./images/avatars/williamson.jpeg"></div>
+                </div>
+                <div class="wtf-footer">
+                  <div><p><span id="links"><small>Popular accounts</span> &#183 <span id="links"><small>Find Friends</small></span></p></div>
+                </div>
+               </div> <!-- end of wtf-container -->
+               <div class="trends">
+                 <ul>
+                    <span id="trends-normal">Trends &#183 </span>Change
+                    <li>Ariel Sharon</li>
+                    <li>#WildheartNumber1</li>
+                    <li>#HappyBirthdayZayn</li>
+                    <li>#ExaDirectioners</li>
+                    <li>Stoke2-4 Liverpool</li>
+                    <li>#Golden Globes</li>
+                    <li>Space Jam</li>
+                    <li>Arda Turam</li>
+                    <li>#TheVoiceUK</li>
+                 </ul>
+               </div>
+               <div class="credits">
+                 &#169; 2014 Twitter &nbsp;About &nbsp;Help &nbsp;Terms &nbsp;Privacy &nbsp;Cookies &nbsp;Ads &nbsp;info &nbsp;Brand &nbsp;Blog &nbsp;Status &nbsp;Apps &nbsp;Jobs &nbsp;Advertise &nbsp;Media &nbsp;Developers
+               </div> <!-- end of credits -->
+            </div> <!-- end of dashboard -->
+
+
+            <!-- TIMELINE -->
+
+            <div class="col-md-8" id="timeline">
+             <div class="tweets-header">
+               Tweets
+             </div>
+
+              <div class="tweet-container">
+
+                <div class="avatar-box">
+                  <div class="avatar">
+                    <img class="avatar-img" src="./images/avatars/nts.jpeg">
+                  </div>
+                </div>
+
+                <div class="content-box">
+
+                  <div class="content-header">
+                    <div class="name-handles">
+                        <strong id="strong-handle">NTS Radio</strong>&nbsp;<span id="handle">@ntslive</span>
+                    </div>
+                    <div class="tweet-time-since">1m</div>
+                  </div> <!-- end of content-header -->
+
+                  <div class="content-text">
+                  Dark n' Lovely Global Roots now in session til 10pm w/<span id="links">@Thristian</span></br>
+                    <span id="links">@GetCrossy</span> ...live tracklist here...<span id="links">http://tinyurl.com/lx5amh9</span>
+                  </div>
+
+                  <div class="content-expand-reply">
+                    <div class="expand"><p>Expand</p></div>
+                    <div class="reply"><p><span class="glyphicon glyphicon-share-alt"></span> Reply&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-retweet"></span> Retweet&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star"></span> Favorite&nbsp;&nbsp;&nbsp;<img src="./images/more_sketch.png">&nbsp;More</p></div>
+                  </div>
+                </div>
+
+                <br clear='all'>
+              </div> <!-- end of tweet-container NTS -->
+
+
+              <div class="tweet-container">
+
+                <div class="avatar-box">
+                  <div class="avatar">
+                    <img class="avatar-img" src="./images/avatars/ecomba.jpeg">
+                  </div>
+                </div>
+
+                <div class="content-box">
+
+                  <div class="content-header">
+                    <div class="name-handles">
+                      <strong id="strong-handle">Bleaken Ripenahusen</strong>&nbsp;<span id="handle">@ecomba</span>
+                    </div>
+                    <div class="tweet-time-since">4m</div>
+                  </div> <!-- end of content-header -->
+
+                  <div class="content-text">
+                    UX/UI, marketing, sales, etc is not something you slap at the end. You either bake it into your app or you create broken contexts.
+                  </div>
+
+                  <div class="content-expand-reply">
+                    <div class="expand"><p>Expand</p></div>
+                    <div class="reply"><p><span class="glyphicon glyphicon-share-alt"></span> Reply&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-retweet"></span> Retweet&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star"></span> Favorite&nbsp;&nbsp;&nbsp;<img src="./images/more_sketch.png">&nbsp;More</p></div>
+                  </div>
+                </div>
+
+                <br clear='all'>
+              </div> <!-- end of tweet-container ECOMBA -->
+
+
+
+              <div class="tweet-container">
+
+                <div class="avatar-box">
+                  <div class="avatar">
+                    <img class="avatar-img" src="./images/avatars/life_hacker.png">
+                  </div>
+                </div>
+
+                <div class="content-box">
+
+                  <div class="content-header">
+                    <div class="name-handles">
+                      <strong id="strong-handle">Lifehacker</strong>&nbsp;<span id="handle">@nlifehacker</span>
+                    </div>
+                    <div class="tweet-time-since">16m</div>
+                  </div> <!-- end of content-header -->
+
+                  <div class="content-text">
+                    A simple toothpick is all you need to fix a door that's difficult to shut. 
+                    <span id="links">lifehac.kr/UzG1S1A pic.twitter.com/bchOwf2uVv</span>
+                  </div>
+
+                  <div class="content-expand-reply">
+                    <div class="expand"><p>Expand</p></div>
+                    <div class="reply"><p><span class="glyphicon glyphicon-share-alt"></span> Reply&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-retweet"></span> Retweet&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star"></span> Favorite&nbsp;&nbsp;&nbsp;<img src="./images/more_sketch.png">&nbsp;More</p></div>
+                  </div>
+                </div>
+
+                <br clear='all'>
+              </div> <!-- end of tweet-container LHACKER -->
+
+
+
+              <div class="tweet-container">
+
+                <div class="avatar-box">
+                  <div class="avatar">
+                    <img class="avatar-img" src="./images/avatars/fivefold.jpeg">
+                  </div>
+                </div>
+
+                <div class="content-box">
+
+                  <div class="content-header">
+                    <div class="name-handles">
+                      <strong id="strong-handle">Five Fold</strong>&nbsp;<span id="handle">@FiveFoldRecords</span>
+                    </div>
+                    <div class="tweet-time-since">23m</div>
+                  </div> <!-- end of content-header -->
+
+                  <div class="content-text">
+                    Our debut 12" 'Prelude EP' by <span id="links">@ADBourke</span> featured on <span id="links">@djmag</span> 'Killer releases'! <span id="links">www.fivefoldrecords.com</span>
+                  </div>
+
+                  <div class="content-expand-reply">
+                    <div class="expand"><p>Expand</p></div>
+                    <div class="reply"><p><span class="glyphicon glyphicon-share-alt"></span> Reply&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-retweet"></span> Retweet&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star"></span> Favorite&nbsp;&nbsp;&nbsp;<img src="./images/more_sketch.png">&nbsp;More</p></div>
+                  </div>
+                </div>
+                <br clear='all'>
+              </div> <!-- end of tweet-container FFOLD -->
+
+
+
+              <div class="tweet-container">
+
+                <div class="avatar-box">
+                  <div class="avatar">
+                    <img class="avatar-img" src="./images/avatars/avdi.jpg">
+                  </div>
+                </div>
+
+                <div class="content-box">
+
+                  <div class="content-header">
+                    <div class="name-handles">
+                      <strong id="strong-handle">Avdi Grimm</strong>&nbsp;<span id="handle">@avdi</span>
+                    </div>
+                    <div class="tweet-time-since">35m</div>
+                  </div> <!-- end of content-header -->
+
+                  <div class="content-text">
+                    No, I wasn't using SimpleDelegator, manual alias method chain, and __callee__ all in one class. Who would do that? :innocent whistle:
+                  </div>
+
+                  <div class="content-expand-reply">
+                    <div class="expand"><p>Expand</p></div>
+                    <div class="reply"><p><span class="glyphicon glyphicon-share-alt"></span> Reply&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-retweet"></span> Retweet&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star"></span> Favorite&nbsp;&nbsp;&nbsp;<img src="./images/more_sketch.png">&nbsp;More</p></div>
+                  </div>
+                </div>
+                <br clear='all'>
+              </div> <!-- end of tweet-container AVDI -->
+
+
+
+              <div class="tweet-container">
+
+                <div class="avatar-box">
+                  <div class="avatar">
+                    <img class="avatar-img" src="./images/avatars/tnw.png">
+                  </div>
+                </div>
+
+                <div class="content-box">
+
+                  <div class="content-header">
+                    <div class="name-handles">
+                      <strong id="strong-handle">The Next Web</strong>&nbsp;<span id="handle">@TheNextWeb</span>
+                    </div>
+                    <div class="tweet-time-since">52m</div>
+                  </div> <!-- end of content-header -->
+
+                  <div class="content-text">
+                    CES highlights: Oculus Rift, Tegra K1, Tactus and more <span id="links">tnw.to/i1FRL</span>by <span id="handle">@beijingdou</span>
+                  </div>
+
+                  <div class="content-expand-reply">
+                    <div class="expand"><p>Expand</p></div>
+                    <div class="reply"><p><span class="glyphicon glyphicon-share-alt"></span> Reply&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-retweet"></span> Retweet&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star"></span> Favorite&nbsp;&nbsp;&nbsp;<img src="./images/more_sketch.png">&nbsp;More</p></div>
+                  </div>
+                </div>
+               <br clear='all'>
+              </div> <!-- end of tweet-container TNW -->
+
+
+
+              <div class="tweet-container">
+
+                <div class="avatar-box">
+                  <div class="avatar">
+                    <img class="avatar-img" src="./images/avatars/mindblow.jpeg">
+                  </div>
+                </div>
+
+                <div class="content-box">
+
+                  <div class="content-header">
+                    <div class="name-handles">
+                      <strong id="strong-handle">Mind Blowing Facts</strong>&nbsp;<span id="handle">@TheMindBlowing</span>
+                    </div>
+                    <div class="tweet-time-since">1h</div>
+                  </div> <!-- end of content-header -->
+
+                  <div class="content-text">
+                    Best fireworks display of 2014. Dubai set the world record (spent $200 million).
+                    New York is not bad though. See pics <span id="links">//buff.ly/1gxxxIQ</span>
+                  </div>
+
+                  <div class="content-expand-reply">
+                    <div class="expand"><p>Expand</p></div>
+                    <div class="reply"><p><span class="glyphicon glyphicon-share-alt"></span> Reply&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-retweet"></span> Retweet&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star"></span> Favorite&nbsp;&nbsp;&nbsp;<img src="./images/more_sketch.png">&nbsp;More</p></div>
+                  </div>
+                </div>
+               <br clear='all'>
+              </div> <!-- end of tweet-container MIND BLOW -->
+
+
+
+              <div class="tweet-container">
+
+                <div class="avatar-box">
+                  <div class="avatar">
+                    <img class="avatar-img" src="./images/avatars/rinse.png">
+                  </div>
+                </div>
+
+                <div class="content-box">
+
+                  <div class="content-header">
+                    <div class="name-handles">
+                      <strong id="strong-handle">Rinse FM</strong>&nbsp;<span id="handle">@RinseFM</span>
+                    </div>
+                    <div class="tweet-time-since">2h</div>
+                  </div> <!-- end of content-header -->
+
+                  <div class="content-text">
+                    Tune into #TheGrimeShow now to hear <span id="links">@SIRSPYRO</span> talking to <span id="links">@OpiumArtist.Rinse.fm/Player</span>
+                  </div>
+
+                  <div class="content-expand-reply">
+                    <div class="expand"><p>Expand</p></div>
+                    <div class="reply"><p><span class="glyphicon glyphicon-share-alt"></span> Reply&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-retweet"></span> Retweet&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star"></span> Favorite&nbsp;&nbsp;&nbsp;<img src="./images/more_sketch.png">&nbsp;More</p></div>
+                  </div>
+                </div>
+               <br clear='all'>
+              </div> <!-- end of tweet-container RINSE -->
+
+
+
+              <div class="tweet-container">
+
+                <div class="avatar-box">
+                  <div class="avatar">
+                    <img class="avatar-img" src="./images/avatars/tech.jpeg">
+                  </div>
+                </div>
+
+                <div class="content-box">
+
+                  <div class="content-header">
+                    <div class="name-handles">
+                      <strong id="strong-handle">TechCrunch</strong>&nbsp;<span id="handle">@TechCrunch</span>
+                    </div>
+                    <div class="tweet-time-since">2h</div>
+                  </div> <!-- end of content-header -->
+
+                  <div class="content-text">
+                    Web-Based Access To Dropbox Files Is Back For 99% Of Users, But Service Interruption Nears 48 Hours <span id="links">tcrn.ch/1auUAU2</span> by <span id="links">@drizzled</span>
+                  </div>
+
+                  <div class="content-expand-reply">
+                    <div class="expand"><p>Expand</p></div>
+                    <div class="reply"><p><span class="glyphicon glyphicon-share-alt"></span> Reply&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-retweet"></span> Retweet&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star"></span> Favorite&nbsp;&nbsp;&nbsp;<img src="./images/more_sketch.png">&nbsp;More</p></div>
+                  </div>
+                </div>
+               <br clear='all'>
+              </div> <!-- end of tweet-container TECH -->
+
+
+              <div class="tweet-container">
+
+                <div class="avatar-box">
+                  <div class="avatar">
+                    <img class="avatar-img" src="./images/avatars/nts.jpeg">
+                  </div>
+                </div>
+
+                <div class="content-box">
+
+                  <div class="content-header">
+                    <div class="name-handles">
+                        <strong id="strong-handle">NTS Radio</strong>&nbsp;<span id="handle">@ntslive</span>
+                    </div>
+                    <div class="tweet-time-since">2h</div>
+                  </div> <!-- end of content-header -->
+
+                  <div class="content-text">
+                  88 Transition with <span id="links">@NicTasker</span> is live till 12 with special guest Konrad Wehrmesiter <span id="links">www.ntslive.co.uk</span>
+                  </div>
+
+                  <div class="content-expand-reply">
+                    <div class="expand"><p>Expand</p></div>
+                    <div class="reply"><p><span class="glyphicon glyphicon-share-alt"></span> Reply&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-retweet"></span> Retweet&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star"></span> Favorite&nbsp;&nbsp;&nbsp;<img src="./images/more_sketch.png">&nbsp;More</p></div>
+                  </div>
+                </div>
+               <br clear='all'>
+              </div> <!-- end of tweet-container NTS 2 -->
+
+
+
+
+              <div class="tweet-container">
+
+                <div class="avatar-box">
+                  <div class="avatar">
+                    <img class="avatar-img" src="./images/avatars/rinse.png">
+                  </div>
+                </div>
+
+                <div class="content-box">
+
+                  <div class="content-header">
+                    <div class="name-handles">
+                      <strong id="strong-handle">Rinse FM</strong>&nbsp;<span id="handle">@RinseFM</span>
+                    </div>
+                    <div class="tweet-time-since">3h</div>
+                  </div> <!-- end of content-header -->
+
+                  <div class="content-text">
+                    'The Grime Show' with <span id="links">@SIRSPYRO</span> live now on <span id="links">Rinse.fm/Player</span>  . Keep it right here for <span id="links">@OpiumArtist</span> performing live.
+                  </div>
+
+                  <div class="content-expand-reply">
+                    <div class="expand"><p>Expand</p></div>
+                    <div class="reply"><p><span class="glyphicon glyphicon-share-alt"></span> Reply&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-retweet"></span> Retweet&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star"></span> Favorite&nbsp;&nbsp;&nbsp;<img src="./images/more_sketch.png">&nbsp;More</p></div>
+                  </div>
+                </div>
+               <br clear='all'>
+              </div> <!-- end of tweet-container RINSE 2-->
+
+
+
+
+
+              <div class="tweet-container">
+
+                <div class="avatar-box">
+                  <div class="avatar">
+                    <img class="avatar-img" src="./images/avatars/life_hacker.png">
+                  </div>
+                </div>
+
+                <div class="content-box">
+
+                  <div class="content-header">
+                    <div class="name-handles">
+                      <strong id="strong-handle">Lifehacker</strong>&nbsp;<span id="handle">@nlifehacker</span>
+                    </div>
+                    <div class="tweet-time-since">4h</div>
+                  </div> <!-- end of content-header -->
+
+                  <div class="content-text">
+                    A simple toothpick is all you need to fix a door that's difficult to shut: <span id="links">lifehac.kr/UzG1S1A pic.twitter.com/bchOwf2uVv</span>
+                  </div>
+
+                  <div class="content-expand-reply">
+                    <div class="expand"><p>Expand</p></div>
+                    <div class="reply"><p><span class="glyphicon glyphicon-share-alt"></span> Reply&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-retweet"></span> Retweet&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-star"></span> Favorite&nbsp;&nbsp;&nbsp;<img src="./images/more_sketch.png">&nbsp;More</p></div>
+                  </div>
+                </div>
+               <br clear='all'>
+              </div> <!-- end of tweet-container LHACKER 2-->
+
+
+
+            </div> <!-- end of timeline -->
+          </div> <!-- end of row -->
+    </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="javascript/bootstrap.js"></script>
+    </body>
+
+</html>
